@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Profile - NEMI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-body">
+        <div class="container">
+            <div class="profile-card">
+                <div class="avatar">
+                    <img src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-6/462565903_1664841407422687_4816636589029946176_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEYKEBVIDqqwevTn5h7f9BMiGsrPh3x5huIays-HfHmG1dmxozmsijRarTT5GBEmgiXB0TksvMinLmSE17dNRI8&_nc_ohc=bPtVf7mfda0Q7kNvwFkF2Yt&_nc_oc=Adq43o_UrvOz8VgbbaxgeHRB200CyWaczwVc5aGtmOodLS3GBKlRFGAeSbMkmbSlW3Y&_nc_zt=23&_nc_ht=scontent.fhan20-1.fna&_nc_gid=uSi10CJ-6VSdg9upbqnEkw&_nc_ss=7a3a8&oh=00_Af054BSOSFXiFrzR66jhWtabwN9L5Eh2dYqQtIwKrFd7Iw&oe=69EAAF79" alt="Ảnh đại diện">
+                </div>
+                <h1 class="name">Bùi Đức Minh</h1>
+                <p class="position">Developer tại NEMI</p>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ducminhnj13" class="social facebook" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social zalo" title="Zalo">
+                        <i class="fab fa-comment-dots"></i>
+                    </a>
+                    <a href="https://web.telegram.org/a/#8799037733" class="social telegram" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                
+                <button id="gift-btn" class="gift-btn">
+                    <i class="fas fa-gift"></i> Tặng quà
+                </button>
+            </div>
+        </div>
+    
+        <div class="message-section">
+            <h2>Để lại lời nhắn</h2>
+            <form id="message-form">
+                <input type="text" id="sender-name" placeholder="Tên của bạn" required>
+                <textarea id="message-content" placeholder="Nội dung lời nhắn" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+            <div id="messages"></div>
+        </div>
+    </div>
+    
+    <canvas id="fireworks-canvas"></canvas>
+    
+    <script src="script.js"></script>
+</body>
+</html>
